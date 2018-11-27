@@ -16,7 +16,8 @@ Send the client custom information based on their location.
 # Exercise with isSameSpot(::)
 
 let coord1: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 37.358028, longitude: -121.9074856)
-let coord2: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 37.358029, longitude: -121.9074857)
+
+let coord2: CLLocationCoordinate2D = CLLocationCoordinate3D(latitude: 37.358029, longitude: -121.9074857)
 
 let result = isSameSpot(coord1, coord2) // returns true
 
