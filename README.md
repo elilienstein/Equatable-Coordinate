@@ -3,7 +3,6 @@
 #Includes: 
 - an extension to type CLLocationCoordinate2D to conform to Equatable
 - an extension to type Double to truncate a geo-coordinate to a specified number of decimal places.
-- a public function accepting 2 coordinates and returning a boolean value
 
 #Reasoning: 
  If two coordinates are queried for approximate equality, their latitude and longitude need to be of predictable length. A value in decimal degrees to 5 decimal places is precise to 1.1132 meter at the equator.  Close enough for my purpose.
