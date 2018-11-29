@@ -14,15 +14,8 @@ import CoreLocation
 extension CLLocationCoordinate2D: Equatable {}
 
 public func ==(lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
-    return lhs.latitude == rhs.latitude
-        && lhs.longitude == rhs.longitude
-}
-
-
-public func isSameSpot(_ lhs: CLLocationCoordinate2D, _ rhs: CLLocationCoordinate2D)->Bool {
-    
     return lhs.latitude.truncate(places: 5) == rhs.latitude.truncate(places: 5)
-    && lhs.longitude.truncate(places: 5) == rhs.longitude.truncate(places: 5)
+        && lhs.longitude.truncate(places: 5) == rhs.longitude.truncate(places: 5)
 }
 
 // an extension to type Double lets us compare latitude and longitude with predictable lengths
